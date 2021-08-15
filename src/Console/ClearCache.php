@@ -45,11 +45,15 @@ class ClearCache extends Command {
         $slug = $this->argument('slug');
 
         if (isset($slug)) {
-            $Cache->ClearCache($slug, $Recursive);
+            $result = $Cache->ClearCache($slug, $Recursive);
         } else {
-            $Cache->ClearAllCache();
+            $result = $Cache->ClearAllCache();
         }
 
-        $this->info("Page cache cleared for '{$slug}' " . ($Recursive ? 'Recursively' : ''));
+        if ($result) {
+            $this->info("Page cache cleared for '{$slug}' " . ($Recursive ? 'Recursively' : ''));
+        } else {
+            $this->info("Page cache failed to clear for '{$slug}' " . ($Recursive ? 'Recursively' : '') . 'Most like that the permission is not correct.');
+        }
     }
 }

@@ -29,7 +29,7 @@ class Cache {
     public function SaveCache(Request $request, Response $response) {
         $CacheFile = $request->path() . '.cache';
         if (!File::exists($this->CachePath . $request->path())) {
-            File::makeDirectory($this->CachePath . $request->path(), 0755, true);
+            File::makeDirectory($this->CachePath . $request->path(), 0775, true);
         }
         File::put($this->CachePath . $CacheFile, $response->getContent());
     }
@@ -47,11 +47,11 @@ class Cache {
         }
 
         $CacheFile = $URL . '.cache';
-        File::delete($this->CachePath . $CacheFile);
+        return File::delete($this->CachePath . $CacheFile);
     }
 
     public function ClearAllCache() {
-        File::deleteDirectory($this->CachePath);
+        return File::deleteDirectory($this->CachePath);
     }
 
     public function IsCacheExists(Request $request) {

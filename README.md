@@ -95,3 +95,7 @@ To clear everything under a given path, use the `--recursive` flag:
 ```
 php artisan PageCache:clear {slug} --recursive
 ```
+
+### Remark
+If the Console function is not working, most likely to be the problem of permission for the cache folder.
+Please check with `ls -la` to check for the permission.
