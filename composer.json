@@ -1,0 +1,28 @@
+{
+    "name": "label-li/laravel-page-cache",
+    "description": "Page Cache for Laravel PHP Static Page",
+    "version": "1.0.2",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "LabelLi\\LaravelPageCache\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Label Li",
+            "email": "label@lmw.hk"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "laravel/framework": "^v8.0.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LabelLi\\LaravelPageCache\\PageCacheServiceProvider"
+            ]
+        }
+    }
+}
