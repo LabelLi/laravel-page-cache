@@ -3,6 +3,7 @@
     "description": "Page Cache for Laravel PHP Static Page",
     "version": "1.0.2",
     "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "LabelLi\\LaravelPageCache\\": "src/"
