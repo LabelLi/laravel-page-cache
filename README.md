@@ -1,7 +1,6 @@
 # Laravel Page Cache
-[![Latest Stable Version][ico-version]][link-packagist]
-[![Total Downloads][ico-downloads]][link-downloads]
-[![License][ico-license]](LICENSE.txt)
+[![Latest Stable Version](http://poser.pugx.org/label-li/laravel-page-cache/v)](https://packagist.org/packages/label-li/laravel-page-cache) 
+[![License](http://poser.pugx.org/label-li/laravel-page-cache/license)](https://packagist.org/packages/label-li/laravel-page-cache)
 
 This package allows you to easily cache responses as static files on disk for lightning fast page loads.
 
@@ -96,11 +95,3 @@ To clear everything under a given path, use the `--recursive` flag:
 ```
 php artisan PageCache:clear {slug} --recursive
 ```
-
-
-[ico-downloads]: https://poser.pugx.org/label-li/laravel-page-cache/downloads
-[ico-license]: https://poser.pugx.org/label-li/laravel-page-cache/license
-[ico-version]: https://poser.pugx.org/label-li/laravel-page-cache/v/stable
-
-[link-downloads]: https://packagist.org/packages/label-li/laravel-page-cache
-[link-packagist]: https://packagist.org/packages/label-li/laravel-page-cache
