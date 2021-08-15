@@ -9,6 +9,7 @@ This package allows you to easily cache responses as static files on disk for li
 - [Installation](#installation)
     - [Middleware](#middleware)
 - [Config](#config)
+- [Usage](#usage)
 
 This package can cache static PHP page on local disk to provide a fast loading of pages
 
