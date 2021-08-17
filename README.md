@@ -9,6 +9,7 @@ This package allows you to easily cache responses as static files on disk for li
     - [Middleware](#middleware)
 - [Config](#config)
 - [Usage](#usage)
+- [Credit](#credit)
 
 This package can cache static PHP page on local disk to provide a fast loading of pages
 
@@ -99,3 +100,9 @@ php artisan PageCache:clear {slug} --recursive
 ### Remark
 If the Console function is not working, most likely to be the problem of permission for the cache folder.
 Please check with `ls -la` to check for the permission.
+
+
+## Credit
+Thanks to [Joseph Silber](https://github.com/JosephSilber). 
+The idea to run cache function directly at middleware is from his [package](https://github.com/JosephSilber/page-cache). 
+His package is very great but I have different usage. So I write another page cache package to archive my usage.
