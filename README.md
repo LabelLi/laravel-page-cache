@@ -20,7 +20,7 @@ Page cache can reduce the loading.
 ## installation
 1) Install package with composer:
 ```
-$ composer require label-li/laravel-page-cache
+composer require label-li/laravel-page-cache
 ```
 
 2) Publish the config to `config/pagecache.config`
