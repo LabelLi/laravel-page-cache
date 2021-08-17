@@ -1,6 +1,7 @@
 {
     "name": "label-li/laravel-page-cache",
     "description": "Page Cache for Laravel PHP Static Page",
+    "keywords":["page cache","laravel","auto page cache middleware"],
     "version": "1.1.7",
     "type": "library",
     "license": "MIT",
